@@ -13,9 +13,9 @@ import { getClickData, isEventValid } from "../../utils/charts";
 
 interface Props
     extends BoxProps,
-        GridChartBaseProps,
-        StylesApiProps,
-        DashBaseProps {
+    GridChartBaseProps,
+    StylesApiProps,
+    DashBaseProps {
     /** Data used to display chart */
     data: Record<string, any>[];
     /** An array of objects with `name` and `color` keys. Determines which data should be consumed from the `data` array. */
@@ -32,6 +32,7 @@ interface Props
     children?: React.ReactNode;
     /** Click data */
     clickData?: Record<string, any>;
+    barProps?: Record<string, any>;
 }
 
 /** BarChart */
